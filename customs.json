@@ -1,0 +1,19 @@
+{
+    "elements": {},
+    "attributes": {
+        "aria-current": {
+            "context": "a"
+        },
+        "th:text": {
+            "context": "div"
+        },
+        "integrity": {
+            "context": "script"
+        },
+        "th:text\"${objeto}\"": {},
+        "th:src": {
+            "context": "img"
+        },
+        "th:each": {}
+    }
+}
