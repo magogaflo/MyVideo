@@ -14,19 +14,21 @@ import javax.persistence.Id;
  * @author paty
  */
 @Entity
-public class Calificacion {
+public class Pais_Origen {
     
     @Id
     @NotNull
     private String id;
-    private String nombre_calificacion;
+    private String idioma;
+    private String nombre_pais;
 
-    public Calificacion(String id, String nombre_calificacion) {
+    public Pais_Origen(String id, String idioma, String nombre_pais) {
         this.id = id;
-        this.nombre_calificacion = nombre_calificacion;
-    }
+        this.idioma = idioma;
+        this.nombre_pais = nombre_pais;
+    }  
 
-    public Calificacion() {
+    public Pais_Origen() {
     }
 
     public String getId() {
@@ -37,22 +39,27 @@ public class Calificacion {
         this.id = id;
     }
 
-    public String getNombreCalificacion() {
-        return nombre_calificacion;
+    public String getIdioma() {
+        return idioma;
     }
 
-    public void setNombreCalificacion(String nombreCalificacion) {
-        this.nombre_calificacion = nombreCalificacion;
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
+    }
+
+    public String getNombre_pais() {
+        return nombre_pais;
+    }
+
+    public void setNombre_pais(String nombre_pais) {
+        this.nombre_pais = nombre_pais;
     }
 
     
 
-   
-   
+    
 
    
-    
-    
     
     
 }

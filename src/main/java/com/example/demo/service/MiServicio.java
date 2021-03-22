@@ -35,4 +35,9 @@ public class MiServicio implements InterfaceService {
          return  "vamos a eliminar";
     }
 
+    @Override
+    public String odenar() {
+        return  "vamos a ordenar";
+    }
+
 }

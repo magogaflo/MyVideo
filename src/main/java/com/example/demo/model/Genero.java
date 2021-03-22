@@ -5,6 +5,7 @@
  */
 package com.example.demo.model;
 
+import com.sun.istack.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -16,25 +17,36 @@ import javax.persistence.Id;
 public class Genero  {
 
     @Id
-    private String nombreGenero;
+    @NotNull
+    private String id;
+    private String nombre_genero;
 
-    public Genero(String nombreGenero) {
-        this.nombreGenero = nombreGenero;
+    public Genero(String id, String nombre_genero) {
+        this.id = id;
+        this.nombre_genero = nombre_genero;
     }
-
-   
 
     public Genero() {
     }
 
-    public String getNombreGenero() {
-        return nombreGenero;
+    public String getId() {
+        return id;
     }
 
-    public void setNombreGenero(String nombreGenero) {
-        this.nombreGenero = nombreGenero;
+    public void setId(String id) {
+        this.id = id;
     }
 
+    public String getNombre_genero() {
+        return nombre_genero;
+    }
+
+    public void setNombre_genero(String nombre_genero) {
+        this.nombre_genero = nombre_genero;
+    }
+
+    
+    
    
    
 

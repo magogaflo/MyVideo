@@ -15,6 +15,7 @@ public interface InterfaceService {
     public String crear();
     public String modificar();
     public String eliminar();
+    public String odenar();
    
 
 }
